@@ -1,0 +1,9 @@
+<%- include('partials/header'); %>
+<h1 class="fw-bold">Home</h1>
+<br>
+<br>
+<% posts.forEach(element=> { %>
+    <h5 class="fw-bold"> <%=element.title%> </h5>
+    <p> <%=element.body%> </p>
+     <% });%>
+ <%- include('partials/footer'); %> 
