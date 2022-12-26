@@ -1,9 +1,10 @@
 <%- include('partials/header'); %>
-<h1 class="fw-bold">Add Post by going to /compose </h1>
+<h1 class="fw-bold">Home </h1>
 <br>
 <br>
 <% posts.forEach(element=> { %>
     <h5 class="fw-bold"> <%=element.title%> </h5>
-    <p> <%=element.body%> </p>
+    <p> <%=element.body.substring(0,100) + '...'%> </p>
+    <a href="http://localhost:3000/posts/<%=element.title  %>">Read More</a>
      <% });%>
  <%- include('partials/footer'); %> 
