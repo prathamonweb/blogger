@@ -60,6 +60,9 @@ p{
     border-radius: 8px;
     filter: drop-shadow(1px 1px 1px grey);
 }
+.homeContainer {
+    height: 66.4vh;
+}
 .postBox h5 {
     font-size: 25px;
     font-weight: 600;
