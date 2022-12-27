@@ -1,10 +1,13 @@
 <%- include('partials/header'); %>
-<h1 class="fw-bold">Home </h1>
+<h1 class="homeHeading">Home </h1>
 <br>
 <br>
-<% posts.forEach(element=> { %>
-    <h5 class="fw-bold"> <%=element.title%> </h5>
-    <p> <%=element.body.substring(0,100) + '...'%> </p>
-    <a href="http://localhost:3000/posts/<%=element.title  %>">Read More</a>
-     <% });%>
+<div class="postBox">
+    <% posts.forEach(element=> { %>
+        <h5 class="fw-bold"> <%=element.title%> </h5>
+        <p> <%=element.body.substring(0,100) + '...'%> </p>
+        <a href="http://localhost:3000/posts/<%=element.title  %>">Read More</a>
+        <hr> 
+        <% });%>
+</div>
  <%- include('partials/footer'); %> 
